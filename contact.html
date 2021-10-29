@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- fontawesome cdn start -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- fontawesome cdn end -->
+    <!-- link Cdn Botstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- link Cdn Botstrap End -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header Start  -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light py-0">
+        <div class="container">
+          <a class="navbar-brand text-white" href="contact.html">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Pricing</a>
+              </li>
+              <li class="nav-item bg-warning position-relative b_cart-show">
+                <a onclick="cartShow()" class="nav-link text-white" href="#"
+                  ><i class="fas fa-cart-plus"></i
+                ></a>
+                <div id="submenu" class="sub_menu position-absolute p-2">
+                  <div class="sub_menu_header">
+                    <h6 class="heading6">
+                      God Gift Inscence sti.(size) &nbsp;
+                      <span class="cart_price">15.00₹ X 1</span>
+                    </h6>
+                    <hr />
+                  </div>
+                  <div class="sub_menu_header">
+                    <h6
+                      class="
+                        imgbox
+                        d-flex
+                        justify-content-between
+                        align-items-center
+                      "
+                    >
+                      <img
+                        src="img/DSC_03511.jpg"
+                        width="80px"
+                        height="80px"
+                        alt=""
+                      />
+                      <span class="product_title" s
+                        >Original Rudaksh Mala (Size:1)</span
+                      >
+                    </h6>
+                  </div>
+
+                  <div class="sub_menu_main d-flex justify-content-between">
+                    <span class="toatl d-block">Total</span>
+                    <span class="toatl_price d-block">15.00₹</span>
+                  </div>
+                  <div
+                    class="sub_menu_button pt-4 d-flex justify-content-between"
+                  >
+                    <a
+                      class="btn btn-dark rounded-0 view_card card_btn"
+                      href="index.html"
+                    >
+                      VIEW CARD
+                    </a>
+                    <a
+                      href="contact.html"
+                      class="btn text-white rounded-0 check_out card_btn"
+                    >
+                      CHECK OUT
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+    <!-- main Start  -->
+    <div class="container my-5">
+      <ul class="nav b_nav align-items-center">
+        <li class="nav-item">
+          <a class="nav-link text-dark p-1" href="#"
+            ><i class="fas fa-home me-1 b_icon"></i>Home
+            <i class="fas fa-angle-right ms-2 mt-1 b_angle"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark p-1" href="#"
+            >Shop <i class="fas fa-angle-right ms-2 mt-1 b_angle"></i
+          ></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark b_selcted p-1"
+            ><span>Shopping Cart</span></a
+          >
+        </li>
+      </ul>
+      <hr class="bg-secondary" />
+
+      <!-- contact Form start  -->
+      <div class="contact_form my-3 my-md-5">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <h3 class="heading3">Biiling Details</h3>
+            <form action="">
+              <div class="row mt-md-4 mt-3">
+                <div class="col-12 col-md-6">
+                  <span class="b_form_title d-block">Name</span>
+                  <input
+                    type="text"
+                    class="w-100 px-2 py-2 my-1"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="col-12 col-md-6">
+                  <span class="b_form_title d-block">Email Address</span>
+                  <input
+                    type="text"
+                    class="w-100 px-2 py-2 my-1"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="col-12 mt-md-4 mt-3">
+                  <span class="b_form_title d-block">Mobile </span>
+                  <input
+                    type="number"
+                    class="w-100 px-2 py-2 my-1"
+                    placeholder="Mobile "
+                  />
+                </div>
+                <div class="col-12 mt-md-4 mt-3">
+                  <span class="b_form_title d-block">Address </span>
+                  <input
+                    type="text"
+                    class="w-100 px-2 py-2 my-1"
+                    placeholder="Address "
+                  />
+                </div>
+                <div class="col-12 col-md-6 mt-md-4 mt-3">
+                  <span class="d-block">City</span>
+                  <select
+                    class="form-select mt-1"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Noida</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-6 mt-md-4 mt-3">
+                  <span class="d-block">Area</span>
+                  <select
+                    class="form-select mt-1"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Sector 75</option>
+                    <option value="1">Sector 76</option>
+                    <option value="2">Sector 77</option>
+                    <option value="3">Sector 78</option>
+                  </select>
+                </div>
+                <div class="col-12 mt-md-4 mt-3">
+                  <span class="b_form_title d-block"
+                    >Remarks(Required field)
+                  </span>
+                  <input
+                    type="text"
+                    class="w-100 px-2 py-2 my-1"
+                    placeholder="Remarks "
+                  />
+                </div>
+                <div class="col-12 mt-md-4 mt-3">
+                  <span class="b_form_title d-block">Discount code </span>
+                  <input
+                    type="text"
+                    class="w-100 px-2 py-2 my-1"
+                    placeholder="Enter code here "
+                  />
+                </div>
+                <div class="col-6 col-md-3 my-md-3 my-2">
+                  <button class="btn b_btn_apply w-100 fw-bold py-2">
+                    APPLY
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3 class="heading3">Your Order</h3>
+            <div class="product_details px-4 py-4 my-md-4">
+              <div
+                class="detail d-flex justify-content-between align-items-center"
+              >
+                <h6 class="heading6">PRODUCT</h6>
+                <h6 class="heading6">TOTAL</h6>
+              </div>
+              <hr />
+              <div
+                class="
+                  detail
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                  mt-md-4 mt-2
+                "
+              >
+                <span class="d-bock b-title2"
+                  >Durga Mata Lehnga Patka Green Color X 1, Size: 5</span
+                >
+                <span class="d-bock b-title3">115.00₹</span>
+              </div>
+              <hr />
+              <div
+                class="
+                  detail
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                  mt-md-4 mt-2
+                "
+              >
+                <span class="d-bock b-title2">Delivery Charge ₹</span>
+                <span class="d-bock b-title3">40</span>
+              </div>
+              <hr />
+              <div
+                class="
+                  detail
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                  mt-md-4 mt-2
+                "
+              >
+                <span class="d-bock b-title2">Subtotal ₹</span>
+                <span class="d-bock b-title3">155</span>
+              </div>
+              <hr />
+              <div
+                class="
+                  detail
+                  d-flex
+                  justify-content-between
+                  align-items-center
+                  mt-md-4 mt-2
+                "
+              >
+                <span class="d-bock b-title3">TOTAL ₹</span>
+                <span class="d-bock b-title3 b_orange">155</span>
+              </div>
+              <hr />
+              <div class="down_content mt-md-5 mt-3">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    COD Payment
+                  </label>
+                </div>
+                <span>
+                  <i class="fas fa-credit-card me-2"></i>Select your payment
+                  option. Pay on delivery
+                </span>
+                <div class="form-check my-md-2">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="flexRadioDefault"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Cash
+                  </label>
+                </div>
+                <div class="d-flex my-md-0 my-3">
+                  <a
+                    href="#"
+                    class="
+                      btn
+                      bg-dark
+                      text-white
+                      rounded-0
+                      m-auto
+                      px-5
+                      b_proceed_btn
+                    "
+                  >
+                    PLACE ORDER</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact Form End -->
+    </div>
+    <!-- main End  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
