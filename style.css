@@ -187,6 +187,9 @@ span input:focus {
   .sub_menu {
     left: 0;
   }
+  #increament {
+    width: 80px !important;
+  }
   .sub_menu.active {
     opacity: 1;
     visibility: visible;
